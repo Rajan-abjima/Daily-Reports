@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            border: 1px solid black;
+            text-align: center;
+        }
+        h1{
+            margin-bottom: 1em;
+        }
+        form{
+            border: 2px solid black;
+            padding: 10px;
+            display: inline-block;
+            text-align: left;
+        }
+        #submit{
+            font-weight: bold;
+        }
+    </style>
+    <title>Forms Practice</title>
+</head>
+<body>
+    <main>
+    <h1>Health Query Form</h1>
+        <form action="blank.html" method="get"><br>
+            Your Name:<br>
+            <input type="text" name="fname"> <input type="text" name="sname"><br><br>
+            Medical History: <br>
+            <textarea cols="50" rows="5">Enter your any special conditions</textarea><br><br>
+            Email: <input type="email" name="email"><br><br>
+            Date of Birth: <input type="date" name="birthdate"> <br><br>
+            Martial Status:<br>
+            <input type="radio" id="single" name="single">
+            <label for="single">Single</label>
+            <input type="radio" id="married" name="married">
+            <label for="married">Married</label>
+            <input type="radio" id="divorced" name="divorced">
+            <label for="divorced">Divorced</label> <br><br>
+            Insurances in your name:<br>
+            <input type="checkbox" id="Bike Insurances" name="Bike Insurances">
+            <label for="Bike Insurances">Bike Insurances</label>
+            <input type="checkbox" id="Health Insurances" name="Health Insurances">
+            <label for="Health Insurances">Health Insurances</label>
+            <input type="checkbox" id="Life Insurances" name="Life Insurances">
+            <label for="Life Insurances">Life Insurances</label> <br><br>
+            <input type="submit" id="submit" name="submit"><br>
+        </form>
+    </main>
+</body>
+</html>
