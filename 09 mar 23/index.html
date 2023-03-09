@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Fetch a JSON file with XMLHttpRequest</h2>
+<p id="demo"></p>
+
+<script>
+//it can request the file through xml as long as its response is in json format//
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  const myObj = JSON.parse(this.responseText);
+  document.getElementById("demo").innerHTML = myObj.name;
+}
+xmlhttp.open("GET", "index.txt");
+xmlhttp.send();
+</script>
+
+</body>
+</html>

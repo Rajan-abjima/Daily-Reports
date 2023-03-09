@@ -1,0 +1,13 @@
+{
+    "name": "rajan",
+    "score": 11.50,
+    "isRajan": false,
+    "lisence": null,
+    "shopitem": ["food","clothes","oil"],
+    "myobj": {
+        "name": "nested",
+        "marks": 45,
+        "shopitem2": ["food", "clothes", {"a":true}]
+    }
+
+}
